@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Course Enrollement</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Student Course Enrollement</h1>
+
+    <div class="login-buttons">
+      <button onclick="location.href='student_login.html'">Student Login</button>
+      <button onclick="location.href='teacher_login.html'">Teacher Login</button>
+    </div>
+  </header>
+
+  <div class="card-container">
+    <div class="card">
+      <h2>Student Panel</h2>
+      <a href="student.html">SHOW</a>
+    </div>
+
+    <div class="card">
+      <h2>Teacher Panel</h2>
+      <a href="teacher.html">SHOW</a>
+    </div>
+
+    <div class="card">
+      <h2>Department Panel</h2>
+      <a href="department.html">SHOW</a>
+    </div>
+
+    <div class="card">
+      <h2>Course Panel</h2>
+      <a href="course.html">SHOW</a>
+    </div>
+  </div>
+
+  <div class="registration-wrapper">
+    <section class="registration">
+      <h2>Student Registration</h2>
+      <form>
+        <label for="student-name">Name:</label>
+        <input type="text" id="student-name" name="student-name" required />
+
+        <label for="student-id">Student ID:</label>
+        <input
+          type="text"
+          id="student-id"
+          name="student-id"
+          pattern="S[0-9]{3}"
+          title="ID must be like S101"
+          required
+        />
+
+        <label for="student-course">Course:</label>
+        <input
+          type="text"
+          id="student-course"
+          name="student-course"
+          placeholder="Enter course"
+          required
+        />
+
+        <button type="submit">Register Student</button>
+      </form>
+    </section>
+
+    <section class="registration">
+      <h2>Teacher Registration</h2>
+      <form>
+        <label for="teacher-name">Name:</label>
+        <input type="text" id="teacher-name" name="teacher-name" required />
+
+        <label for="teacher-id">Teacher ID:</label>
+        <input
+          type="text"
+          id="teacher-id"
+          name="teacher-id"
+          pattern="T[0-9]{3}"
+          title="ID must be like T101"
+          required
+        />
+
+        <label for="teacher-course">Course:</label>
+        <input
+          type="text"
+          id="teacher-course"
+          name="teacher-course"
+          placeholder="Enter course"
+          required
+        />
+
+        <button type="submit">Register Teacher</button>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
+
+

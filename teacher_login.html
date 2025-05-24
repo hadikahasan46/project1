@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Teacher Login</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffe6f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(214, 51, 108, 0.3);
+      width: 320px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      color: #d6336c;
+      margin-bottom: 25px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px 10px;
+      margin: 10px 0 20px 0;
+      border: 1.5px solid #d6336c;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #d6336c;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 6px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #a0294f;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Teacher Login</h2>
+    <form action="teachers.html" method="post">
+      <input type="text" name="teacherId" placeholder="Enter Teacher ID" required />
+      <button type="submit">Log In</button>
+    </form>
+  </div>
+</body>
+</html>
